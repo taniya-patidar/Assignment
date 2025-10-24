@@ -52,16 +52,25 @@
 
       <!-- Right column - widget 2 (gallery) -->
       <aside class="widget widget-right" id="widget-2">
-        <div class="card card-gallery">
-          <div class="card-header">
-            <h3>Gallery</h3>
-          </div>
-          <div class="gallery-grid" id="galleryGrid" aria-live="polite"></div>
-          <div class="gallery-controls">
-            <label class="btn add-btn" for="imgInput">+ ADD IMAGE</label>
-            <input type="file" id="imgInput" accept="image/*" multiple hidden>
-          </div>
-        </div>
+        
+
+        <div class="gallery-box">
+
+  <div class="galleryboxx" ><h6 class="gallery-title">Gallery</h6></div>
+  
+  <div class="gallery-content">
+    <button id="left-btn" class="arrow-btn">←</button>
+
+    <div class="card-gallery" id="cardGallery">
+      <!-- Images will appear here -->
+    </div>
+
+    <button id="right-btn" class="arrow-btn">→</button>
+  </div>
+
+  <button id="addImageBtn" class="add-image-btn"><span>+ ADD IMAGE</span></button>
+  <input type="file" id="imgInput" accept="image/*" multiple hidden>
+</div>
       </aside>
     </section>
 

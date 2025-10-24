@@ -36,13 +36,13 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 .panel{padding-top:8px}
 
 /* Gallery */
-.card-gallery{display:flex; flex-direction:column; gap:12px; overflow-x: auto; scroll-behavior: smooth;}
+/* .card-gallery{display:flex; flex-direction:column; gap:12px; overflow-x: auto; scroll-behavior: smooth;}
 .gallery-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(120px,1fr)); gap:12px}
 .gallery-grid img{width:100%; height:84px; object-fit:cover; border-radius:8px; box-shadow:0 6px 18px rgba(2,6,23,0.06)}
 
 .gallery-controls{display:flex; justify-content:flex-end; align-items:center}
 .btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:10px 14px; border-radius:10px; border:1px solid rgba(15,23,42,0.06); background:#fff; cursor:pointer;}
-.add-btn{background:linear-gradient(180deg,#ffffff,#f7fbff); box-shadow:0 6px 18px rgba(11,98,255,0.04)}
+.add-btn{background:linear-gradient(180deg,#ffffff,#f7fbff); box-shadow:0 6px 18px rgba(11,98,255,0.04)} */
 
 .footer{margin-top:20px; color:var(--muted); font-size:14px}
 
@@ -133,4 +133,159 @@ body{
     font-size: 12px;
     letter-spacing: 0;
    
+}
+
+
+
+/* by me  */
+
+.gallery-box {
+    margin-right: 100px;
+  width: 570px;
+  height:220px;
+  background:  #373e44;
+  border-radius: 23px;
+  padding: 20px;
+  position: relative;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* Title */
+.gallery-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Image area */
+.gallery-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.galleryboxx{
+    width: 90px; 
+    background-color:#191b1f ;
+    border-radius: 10px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gallery images container */
+.card-gallery {
+   
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+  width: 100%;
+}
+
+.card-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.card-gallery img {
+  width: 180px;
+  height: 120px;
+  border-radius: 15px;
+  object-fit: cover;
+  background: #2a2a2a;
+}
+
+/* Arrows */
+.arrow-btn {
+  background-color: #171717;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  opacity: 0.8;
+}
+
+#left-btn {
+  left: -15px;
+}
+
+#right-btn {
+  right: -15px;
+}
+
+.arrow-btn:hover {
+  opacity: 1;
+}
+
+/* Add Image Button (Figma styling) */
+.add-image-btn {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+  /* margin-top: 20px; */
+  background: rgba(255, 255, 255, 0.03);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 104px;
+  padding: 12px 40px;
+  font-weight: 500;
+  cursor: pointer;
+  backdrop-filter: blur(104.56px);
+  box-shadow: inset 0 3.26px 3.26px rgba(255, 255, 255, 0.15);
+  transform: rotate(-180deg); 
+  transition: background 0.3s;
+  z-index: 20;
+}
+
+.add-image-btn span{
+   display: inline-block;
+   transform: rotate(180deg);
+}
+
+.add-image-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.img-container {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.img-container img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  padding: 2px 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.close-btn:hover {
+  background: red;
 }
