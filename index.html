@@ -1,11 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Assignment - Internship Project</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+<div id="tophead">
+<div id="first"> 
+    <div class="left"></div>
+    <div class="right">
+         <main class="page">
+    <header class="topbar">
+     
+    </header>
+
+    <section class="content-wrap">
+      
+      <aside class="widget widget-left" id="widget-1">
+        <div class="card">
+          <div class="tabs" role="tablist" aria-label="Profile tabs">
+            <button role="tab" aria-selected="true" id="tab-about" class="tab">About Me</button>
+            <button role="tab" aria-selected="false" id="tab-exp" class="tab">Experience</button>
+            <button role="tab" aria-selected="false" id="tab-rec" class="tab">Recommended</button>
+          </div>
+          <div class="tab-panels">
+            <div role="tabpanel" id="panel-about" aria-labelledby="tab-about" class="panel"> 
+             
+              <p>  <br><br><br><br>I'm Taniya patidar, from Dhar.
+                Currently I'm pursuing bachleor of Technology in Electronic and Communication stream in University institute of technology RGPV , Bhopal. <br><br>
+                Enthusiastic and dedicated Btech students with a strong foundation in frontend developer,proficient in Html, Css, JavaScript, Git and Github. Passonate about creating website and learning web technologies. 
+              I like to interact with people and gain knowledge and learning new things...
+
+              </p>
+            </div>
+            <div role="tabpanel" id="panel-exp" aria-labelledby="tab-exp" class="panel" hidden>
+              <!-- <h2>Experience</h2> -->
+                <br><br><br><br>
+              <ul>
+                <li>Participate in college coding program</li>
+                <li>Participate in 24-hour hackathon(Nagpur)</li>
+              </ul>
+            </div>
+            <div role="tabpanel" id="panel-rec" aria-labelledby="tab-rec" class="panel" hidden>
+              <!-- <h2>Recommended</h2> -->
+              <p> <br><br><br><br>These are recommended resources and projects I worked on.</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="middle"></div>
+
+      <!-- (gallery) -->
+      <aside class="widget widget-right" id="widget-2">
+        
+
+        <div class="gallery-box">
+
+  <div class="galleryboxx" ><h6 class="gallery-title">Gallery</h6></div>
+  
+  <div class="gallery-content">
+    <button id="left-btn" class="arrow-btn">←</button>
+
+    <div class="card-gallery" id="cardGallery">
+      <!-- Image -->
+    </div>
+
+    <button id="right-btn" class="arrow-btn">→</button>
+  </div>
+
+  <button id="addImageBtn" class="add-image-btn"><span>+ ADD IMAGE</span></button>
+  <input type="file" id="imgInput" accept="image/*" multiple hidden>
+</div>
+      </aside>
+      <div class="middle"></div>
+
+    </section>
+
+  </main>
+    </div></div>
+ 
+
+  <script src="script.js"></script>
+   </div>
 </body>
 </html>
