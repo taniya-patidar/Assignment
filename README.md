@@ -24,7 +24,7 @@ This project is a **Figma-to-React implementation** given as part of the interns
 
 
 ##  Live Demo
- [Click here to view live project](https://assignment-flame-theta.vercel.app/))
+ [Click here to view live project](https://assignment-flame-theta.vercel.app/)
 
 ---
 
