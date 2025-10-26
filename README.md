@@ -2,7 +2,7 @@
 
 This project is a **Figma-to-React implementation** given as part of the internship screening assignment.
 
-
+---
 
 ##  Features
 * Built with HTML, CSS, and JavaScript
